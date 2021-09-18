@@ -15,10 +15,12 @@ cd plex
 sudo mkdir database; sudo mkdir transcode; sudo mkdir plexmedia; cd plexmedia; mkdir WD1TB
 cd
 
-# Pull/Run container
-sudo docker pull linuxserver/plex
 # remove old images
 sudo docker rm -f plex
+
+# Pull/Run container
+sudo docker pull linuxserver/plex
+
 
 sudo docker run -d \
   --name=plex \

@@ -9,11 +9,12 @@ sudo pip3 install docker-compose
 # Create local IP variable and bind to show default local interface IP
 mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
 
+# remove old images
+sudo docker rm -f portainer
 
 # Pull/Run container
 sudo docker pull portainer/portainer-ce
-# remove old images
-sudo docker rm -f portainer
+
 
 # Launch Portainer
 
