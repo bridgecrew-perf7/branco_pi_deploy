@@ -5,6 +5,10 @@ docker image prune -f
 
 # Kills all Containers
 docker kill $(docker ps -q)
+
+# Restarts docker service
+sudo snap disable docker
+sudo snap enable docker
    
 # Pulls images and Runs Containers and updates them
 bash portainer.sh
@@ -26,6 +30,9 @@ bash filerserver.sh
 bash glancesrunner.sh
 bash plexrunner.sh
 
+# Restarts docker service
+sudo snap disable docker
+sudo snap enable docker
 
 #Starts all Containers
 docker start $(docker ps -a -q)
