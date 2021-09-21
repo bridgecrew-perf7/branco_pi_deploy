@@ -8,10 +8,7 @@ sudo apt-get update && sudo apt-get install -y gnupg software-properties-common 
 sudo apt install -y xrdp
 sudo systemctl enable --now xrdp
 sudo ufw allow from any to any port 3389 proto tcp
-sudo apt update
-sudo apt install openssh-server
-sudo systemctl status ssh
-sudo ufw allow ssh
+
 
 echo Installed Dependencies!
 
@@ -58,3 +55,7 @@ sudo apt-get update && sudo apt-get -y install terraform
 terraform -help
 
 echo Terraform Installed
+
+sudo apt update
+sudo apt install openssh-server
+sudo ufw allow ssh
