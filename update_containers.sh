@@ -3,13 +3,13 @@
 # Kills all Containers
 echo /////////////////////
 echo Stoping Containers...
-echi /////////////////////
+echo /////////////////////
 docker kill $(docker ps -q)
    
 # Pulls images and Runs Containers and updates them
 echo /////////////////////
 echo Pulling Images...
-echi /////////////////////
+echo /////////////////////
 bash portainer.sh
 cd NGINX
 cd Proxy
@@ -29,19 +29,23 @@ bash fileserver.sh
 bash glancesrunner.sh
 bash plexrunner.sh
 
+docker scan $(docker images -q)
+
 echo /////////////////////
 echo Images Updated... Starting Containers.
-echi /////////////////////
+echo /////////////////////
 
 #Starts all Containers
 docker start $(docker ps -a -q)
 
 echo /////////////////////
 echo Local IPs Bellow:
-echi /////////////////////
+echo /////////////////////
 
 echo Plex: @localip:32400
 echo Protainer: @localip:8090
 echo PI: @localip:8091
 echo Webserver: @localip
 echo Fileserver: @localip:8092
+
+sleep 1000
