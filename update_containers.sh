@@ -58,7 +58,7 @@ while true; do
     read -p "Do you have want to exit?" yn
     case $yn in
         [Yy]* ) exit;;
-        [Nn]* ) make install; break ;;
+        [Nn]* ) make install; break;;
         * ) echo "Please answer yes or no.";;
     esac
 done
