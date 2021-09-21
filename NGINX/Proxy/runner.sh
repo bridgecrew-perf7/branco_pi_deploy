@@ -6,3 +6,4 @@ echo
 echo
 echo
 echo webserver live @ localhost:8093
+sudo docker update --restart unless-stopped proxyserver

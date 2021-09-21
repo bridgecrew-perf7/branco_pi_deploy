@@ -6,3 +6,4 @@ echo
 echo
 echo
 echo webserver live @ localhost:8091
+sudo docker update --restart unless-stopped ws1-lucinda.branconet.com

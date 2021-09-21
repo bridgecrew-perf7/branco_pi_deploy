@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Removes unused images
-docker image prune -f
-
 # Kills all Containers
 docker kill $(docker ps -q)
 
