@@ -2,10 +2,6 @@
 
 # Kills all Containers
 docker kill $(docker ps -q)
-
-# Restarts docker service
-sudo snap disable docker
-sudo snap enable docker
    
 # Pulls images and Runs Containers and updates them
 bash portainer.sh
@@ -23,13 +19,15 @@ cd ..
 cd PiHole
 bash pirunner.sh
 cd ..
-bash filerserver.sh
+bash fileserver.sh
 bash glancesrunner.sh
 bash plexrunner.sh
 
-# Restarts docker service
-sudo snap disable docker
-sudo snap enable docker
-
 #Starts all Containers
 docker start $(docker ps -a -q)
+
+echo Plex: @localip:32400
+echo Protainer: @localip:8090
+echo PI: @localip:8091
+echo Webserver: @localip
+echo Fileserver: @localip:8092
