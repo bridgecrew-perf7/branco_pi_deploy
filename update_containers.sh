@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Create local IP variable and bind to show default local interface IP
+mylocalip=$(sudo ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
+
+
 # Kills all Containers
 echo /////////////////////
 echo Stoping Containers...
@@ -42,10 +46,10 @@ echo /////////////////////
 echo Local IPs Bellow:
 echo /////////////////////
 
-echo Plex: @localip:32400
-echo Protainer: @localip:8090
-echo PI: @localip:8091
-echo Webserver: @localip
-echo Fileserver: @localip:8092
+echo Plex: "$localip:32400"
+echo Protainer: "localip:8090"
+echo PI: "$localip:8091"
+echo Webserver: "$localip"
+echo Fileserver: "$localip:8092"
 
 sleep 1000
