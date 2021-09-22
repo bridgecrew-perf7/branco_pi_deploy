@@ -8,7 +8,7 @@ services:
     ports:
       - 8082:80
     volumes:
-      - /media/pi/pi-ssd/share_files/Websites/pi-admin-panel/sites:/var/www/myapp
+      - /media/pi/pi-ssd/share_files/Websites/pi-admin-panel:/var/www/myapp
       - /media/pi/pi-ssd/container-program-files/Websites/phpserver/config:/etc/nginx/conf.d
     depends_on:
       - php
@@ -16,4 +16,4 @@ services:
   php:
     image: php:7.2-fpm
     volumes:
-      - /media/pi/pi-ssd/share_files/Websites/pi-admin-panel/sites:/var/www/myapp
+      - /media/pi/pi-ssd/share_files/Websites/pi-admin-panel:/var/www/myapp
