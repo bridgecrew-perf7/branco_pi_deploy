@@ -2,17 +2,6 @@ version: "3.7"
 
 services:
 
-  web:
-    image: nginx
-    container_name: phpserver
-    ports:
-      - 8082:80
-    volumes:
-      - /media/pi/pi-ssd/share_files/Websites/phpserver/sites:/var/www/myapp
-      - /media/pi/pi-ssd/container-program-files/Websites/phpserver/config:/etc/nginx/conf.d/site.conf
-    depends_on:
-      - php
-
   php:
     image: php:7.2-fpm
     volumes:
