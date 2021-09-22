@@ -17,4 +17,3 @@ services:
     image: php:7.2-fpm
     volumes:
       - /media/pi/pi-ssd/share_files/Websites/phpserver/sites:/var/www/myapp
-      - /media/pi/pi-ssd/container-program-files/Websites/phpserver/php.ini:/usr/local/etc/php/php.ini
