@@ -4,7 +4,7 @@ services:
 
   web:
     image: nginx
-    container_name: piadmin.branconet.com
+    container_name: carlosweb.branconet.com
     ports:
       - 8082:80
     volumes:
