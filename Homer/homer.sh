@@ -13,7 +13,7 @@ docker run -d \
 
 cp /home/pi/branco_pi_deploy/Homer/config.yml /home/pi/homer/assets/config.yml
 sudo rm -rfv /home/pi/homer/assets/branconet_assets/
-sudo cp -r /home/pi/branco_pi_deploy/Homer/branconet_assets /home/homer/assets/branconet_assets/
+sudo cp -r /home/pi/branco_pi_deploy/Homer/branconet_assets /home/pi/homer/assets/branconet_assets/
 
 
   echo Finished $ip:8081 or homer.box:8091
