@@ -61,7 +61,7 @@ links:
   # see url field and assets/additionnal-page.yml.dist used in this example:
   - name: "JTMB Github"
     icon: "fab fa-github"
-    url: "https://github.com/jtmb/raspberrypi-dev-setup"
+    url: "https://github.com/jtmb/branco_pi_deploy"
 
   - name: "Help Wiki"
     icon: "fas fa-question"
