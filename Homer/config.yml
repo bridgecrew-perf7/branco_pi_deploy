@@ -67,6 +67,10 @@ links:
     icon: "fas fa-question"
     url: "https://github.com/bastienwirtz/homer#getting-started"
 
+  - name: "icons"
+    icon: "fas fa-info"
+    url: "https://fontawesome.cc/"
+
   - name: "RT-AX86U"
     icon: "fas fa-wifi"
     url: "http://192.168.0.1"
