@@ -168,6 +168,3 @@ services:
         subtitle: "File Browser hosted on MEDIA"
         tag: "ftp"
         url: "http://files.box:8092/"
-
-
-        test
