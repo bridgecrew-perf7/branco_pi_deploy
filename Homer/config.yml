@@ -67,6 +67,14 @@ links:
     icon: "fas fa-question"
     url: "https://github.com/bastienwirtz/homer#getting-started"
 
+  - name: "RT-AX86U"
+    icon: "fas fa-wifi"
+    url: "http://192.168.0.1"
+
+  - name: "HH4000"
+    icon: "far fa-bell"
+    url: "http://192.168.2.1"
+
 # Services
 # First level array represent a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
@@ -107,7 +115,7 @@ services:
         logo: "assets/branconet_assets/glances.png"
         subtitle: "Glances hosted on PI"
         tag: "Monitoring"
-        url: "http://192.168.0.43:8093/"
+        url: "http://192.168.0.221:8093/"
 
   - name: "Storage and Media"
     icon: "fas fa-hdd"
