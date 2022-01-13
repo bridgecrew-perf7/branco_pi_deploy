@@ -150,7 +150,7 @@ services:
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
         tag: "web"
-        url: "http://192.168.0.221/"
+        url: "http://192.168.0.221:81/"
     
       - name: "lucinda.branconet.com"
         logo: "assets/branconet_assets/nginx.png"
