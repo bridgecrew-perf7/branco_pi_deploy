@@ -150,7 +150,7 @@ services:
 
 
   - name: "Web Servers"
-    icon: "fas fa-cloud"
+    icon: "fas fa-globe"
     items:
       - name: "Reverse Proxy"
         logo: "assets/branconet_assets/nginx.png"
@@ -158,6 +158,22 @@ services:
         tag: "web"
         url: "http://192.168.0.221:81/"
     
+      - name: "lucinda.branconet.com"
+        logo: "assets/branconet_assets/nginx.png"
+        subtitle: "WebServer hosted on PI"
+        tag: "web"
+        url: "http://lucinda.branconet.com/"
+
+      - name: "santos.branconet.com"
+        logo: "assets/branconet_assets/nginx.png"
+        subtitle: "WebServer hosted on PI"
+        tag: "web"
+        url: "http://santos.branconet.com/"
+
+  - name: "Local Cloud"
+    icon: "fas fa-cloud"
+    items:
+  
       - name: "lucinda.branconet.com"
         logo: "assets/branconet_assets/nginx.png"
         subtitle: "WebServer hosted on PI"
