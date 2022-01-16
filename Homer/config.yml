@@ -136,11 +136,17 @@ services:
         tag: "Media"
         url: "http://192.168.0.221:32400/manage"
 
-      - name: "Next Cloud"
+      - name: "CoffeeCloud"
         logo: "assets/branconet_assets/nextcloud.png"
         subtitle: "NextCloud hosted on MEDIA"
         tag: "Media"
-        url: "http://nextcloud.box"
+        url: "https://cloud.branconet.com"
+
+      - name: "Vaultwarden"
+        logo: "assets/branconet_assets/nextcloud.png"
+        subtitle: "Vaultwarden hosted on MEDIA"
+        tag: "Media"
+        url: "https://cloud.branconet.com"
 
 
   - name: "Web Servers"
