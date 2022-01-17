@@ -101,7 +101,7 @@ services:
 
       - name: "Jenkins"
         logo: "assets/branconet_assets/jenkins.png"
-        subtitle: "Jenkins hosted on MINI"
+        subtitle: "Jenkins hosted on HP"
         tag: "app"
         url: "http://jenkins.box:8091/"
 
