@@ -1,13 +1,13 @@
-version: '2'
+version: '3'
 services:
- app:
-  image: nginx
-  container_name: proxyserver
-  volumes:
-   - /media/pi/pi-ssd/share_files/Websites/reverseproxy/sites:/usr/share/nginx/html
-   - /media/pi/pi-ssd/container-program-files/Websites/reverseproxy/config:/etc/nginx/conf.d
-  ports:
-   - "80:80"
-  environment:
-   - NGINX_HOST=proxy.branconet.com
-   - NGINX_PORT=80
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: proxymanager
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - /home/pi/container-program-files/NGINX_PROXY_MANAGER/data:/data
+      - /home/pi/container-program-files/NGINX_PROXY_MANAGER/letsencrypt:/etc/letsencrypt
