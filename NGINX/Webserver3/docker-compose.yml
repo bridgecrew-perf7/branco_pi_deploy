@@ -4,7 +4,7 @@ services:
   image: nginx
   container_name: ws3-aplb.branconet.com
   volumes:
-   - /media/pi/pi-ssd/share_files/Websites/aplb.branconet.com:/usr/share/nginx/html
+   - /home/pi/container-program-files/aplb.branconet.com:/usr/share/nginx/html
   ports:
    - "8083:80"
   environment:

@@ -7,5 +7,5 @@ cd /home/pi/container-program-files/ && git clone https://github.com/chucky747/a
 echo
 echo
 echo
-echo webserver live @ localhost:8093
+echo webserver live @ localhost:8083
 sudo docker update --restart unless-stopped ws3-aplb.branconet.com
