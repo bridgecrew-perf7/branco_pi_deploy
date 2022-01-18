@@ -9,3 +9,4 @@ echo
 echo
 echo webserver live @ localhost:8083
 sudo docker update --restart unless-stopped ws3-aplb.branconet.com
+sudo docker restart ws3-aplb.branconet.com
