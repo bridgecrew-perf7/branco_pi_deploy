@@ -170,6 +170,12 @@ services:
         tag: "web"
         url: "http://santos.branconet.com/"
 
+      - name: "aplb.branconet.com"
+        logo: "assets/branconet_assets/nginx.png"
+        subtitle: "WebServer hosted on PI"
+        tag: "web"
+        url: "http://aplb.branconet.com/"
+
   - name: "Local Cloud"
     icon: "fas fa-cloud"
     items:
